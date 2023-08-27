@@ -1,4 +1,3 @@
-# Basics of Python
 #1-This is a comment ================================================================================
 print("Hello Word!")
 
@@ -220,4 +219,130 @@ for i in range (0,5):
         print (i*j)
 
 
-#15-
+#15- While loops and control statements =======================================================================================
+c = 0
+while c<5:
+    c = c+1
+    print (c)
+
+#15-1- 'Break', when you want to exit the loop immedeatly ----------------------------------------------------------------------
+c = 0
+while c<5:
+    c = c+1
+    if c==3:
+        break
+    print (c)
+
+#15-2- 'Continue' if we wan to skip ---------------------------------------------------------------------------------------------
+#skips the prompts on the current loop and jump to the next iteration of that loop
+c = 0
+while c<5:
+    c = c+1
+    if c ==3:
+        continue #skips printing 3
+    print (c)
+
+#15-3- 'pass' -------------------------------------------------------------------------------------------------------------------
+#just keeps going unitil you later decide to add something there actually a placeholder
+c = 0
+while c<5:
+    c = c+1
+    if c ==3:
+        pass
+    print (c)
+
+#16- Try and Except ==============================================================================================================
+#useful in situations when exceptions may be raised
+try:
+    if name>3:
+        print("Hello")
+
+except: #means if anything except the above statement happened, rush into except statement
+    print("An error has detected.")
+
+#17- Functions ===================================================================================================================
+#series of steps/ instead of writing a repetitive set, you just add functions
+def hello_world(): #hello_world is the name of the function
+    print("Hello World! :)") #adding the function steps here
+
+hello_world()  #how to invoke function
+
+def greeting(name):
+    print("Hello " + name + "!")
+greeting ("Mahsa")
+
+#17-1 'Return' when we want to save and use as a new variable -------------------------------------------------------------------
+def add(num1, num2):
+    return num1 + num2
+
+sum = add(16,25)
+print(sum)
+
+def mult(num3 , num4):
+    return num3*num4
+
+sum1 = mult(2, 3)
+print(sum1)
+
+#17-2- to combine to functions/ outs of functions as an input of another function ----------------------------------------------
+print(mult(add(3,6),add(1,5)))
+
+#18- Built-in python functions =================================================================================================
+abs()  #absolute values (ghadr motlagh)
+bool() #bool(0) = false  bool(1) = true  bool(none) = false
+dir() #detailed help
+    #print(dir("hello"))
+    #print(help("hello".upper))
+    #cap = upper("hello")
+    #print(cap)
+str() #turns into string
+    print("hello" + str(100))
+int() #turns into integer
+    print(124 + int("11"))
+float() #turns into float (with decimals)
+    print(125.1 + float("125.4"))
+
+
+#19- OOP - Object Oriented Programming , classes and object ==================================================================
+#class : Dog / a general idea, a blueprint actually
+#properties: name , age , breed
+#Methods : bark , sleep , eat
+
+#object 1, 2 , 3
+#properties : fibby , 6 , corgi
+
+#by making a class, you can add unlimited objects in it
+
+class Person: 
+    def __init__ (self, name, age):
+        self.name = name
+        self.age = age
+
+    pass
+p1 = Person ("Mahsa" , 27)
+print (p1)
+
+#19-1- OOP, Class inheritance ===============================================================================================
+
+class Car:    #base class
+    def __init__(self):
+    self.wheels = 4  #2 attributes wheels and seats
+    self.seats = 5
+    def drive (self):
+        print ("Drivingn a car")
+
+class SportsCar(Car):  #sportscar inherited the parent class (car class)'s attributes and functions
+    def __init__(self):
+        super().__init__()
+        self.engine_power = "400HP"
+        self.seats = 2
+        def drive(self):
+            print('Driving a sports car')
+
+myCar = Car()
+myCar.drive()
+mySportsCar = SportsCar()
+mySportsCar.drive()
+
+
+
