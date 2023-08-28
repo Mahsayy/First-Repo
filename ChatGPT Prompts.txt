@@ -1,0 +1,38 @@
+shift + enter = next line
+include more details for better answers
+you can also edit your previous prompt using edit botton on the right side of your prompt
+To seperate parts of your prompts, the easiest way: New line using :shift+enter
+
+#2 -few shot prompts: you give some examples as a model and the chatGPT will follow that:
+The movies was great: positive
+The movies was bad: negative
+The movie was not bad: neutral
+the move was slow and i didnt enjoy: 
+the GPT's answer will be negative (instead of talking like a human to you!)
+
+#3- To define steps
+to say chat GPT to follow the steps
+step1:
+step2:
+...
+
+#4: to let GPT think step by step
+you just need to use keyword: 'step by step'
+
+#5- Model Hallucinationit is actually wrong! for example 345*234*233 result will be differnet from calcualtor
+can produce answers that looks like reality but
+you can prevent by just saying : "if you are 100% sure", tell the answer, "otherwise", say im sorry
+
+#6- summarization and extraction
+you can say 'summarize ...' be more detailed for example you can say in what format you want to write
+summarize in bulletpoints, in table,
+
+#7- Categorization
+using custom insructions in GPT 4
+
+#8- transformation: forms and tones
+the keyword is transform: transform the following text to be in the tone of a...
+STACKEDITOR is a good online stuff which you can show HTML codes
+
+#9- Expansion
+Keyword is EXPAND
