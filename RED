@@ -1,0 +1,10 @@
+test3 = input("whats color is it?")
+if test3.lower() == "red":
+    print ("its red!!!!")
+else:
+    print("you are wrong :<")
+    while True:
+        test3 = input("guess another color you stupid")
+        if test3 == "red":
+            print("you are right!!")
+            break
